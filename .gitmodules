@@ -3,4 +3,4 @@
 	url = git@github.com:Miconen/MNK-backend.git
 [submodule "MNK-frontend"]
 	path = MNK-frontend
-	url = https://github.com/Miconen/MNK-frontend
+	url = git@github.com:Miconen/MNK-frontend.git
