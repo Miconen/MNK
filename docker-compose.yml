@@ -5,9 +5,9 @@ services:
     image: postgres:alpine
     restart: always
     environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-      - POSTGRES_DATABASE=postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DATABASE: postgres
     ports:
       - '5432:5432'
     volumes:
@@ -25,10 +25,9 @@ services:
       - "8080:5000"
       - "8081:5001"
     environment:
-      - DATABASE_URL=postgres://postgres:5432@localhost:5342/postgres?schema=public
+      DB_HOST: db
+      JWT_SECRET: aGVsbG8gd29ybGQ= # Development (not very secret) secret
     depends_on:
-      - db
-    links:
       - db
 
 volumes:
