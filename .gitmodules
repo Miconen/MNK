@@ -1,8 +1,8 @@
 [submodule "MNK-backend"]
-	path = MNK-backend
-	url = git@github.com:Miconen/MNK-backend.git
+    path = MNK-backend
+    url = git@github.com:Miconen/MNK-backend.git
     branch = main
 [submodule "MNK-frontend"]
-	path = MNK-frontend
-	url = git@github.com:Miconen/MNK-frontend.git
+    path = MNK-frontend
+    url = git@github.com:Miconen/MNK-frontend.git
     branch = main
